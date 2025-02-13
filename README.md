@@ -13,7 +13,9 @@ Ensure `ollama` is installed and available in your PATH.
 ## Usage
 
 ```bash
-aider-run --model ollama_chat/<model>.yaml <files>
+aider --model ollama_chat/<model> <files>
+# or depending on the model
+aider --model ollama/<model> <files>
 ```
 
 Prompt:
