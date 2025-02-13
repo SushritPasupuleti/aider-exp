@@ -1,5 +1,6 @@
 
 import sys
+import random
 from functions import salt_n_encrypt, decrypt
 
 def main():
