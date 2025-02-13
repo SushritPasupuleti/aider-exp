@@ -1,5 +1,6 @@
 import streamlit as st
 from functions import salt_n_encrypt
+import random
 
 def main():
     st.title("Encrypt Text")
