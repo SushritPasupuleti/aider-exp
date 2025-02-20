@@ -2,8 +2,6 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  return (
-    <div className="App" style={{ backgroundColor: 'white' }}>
   const [text, setText] = useState('');
   const [key, setKey] = useState(0);
   const [encryptedText, setEncryptedText] = useState('');
@@ -42,7 +40,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: 'white' }}>
       <header className="App-header">
         <h1>Encryption and Decryption Tool</h1>
         <input
