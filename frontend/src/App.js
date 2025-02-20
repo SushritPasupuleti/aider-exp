@@ -48,15 +48,17 @@ function App() {
           placeholder="Enter text to encrypt/decrypt"
           value={text}
           onChange={(e) => setText(e.target.value)}
+          className="input-field"
         />
         <input
           type="number"
           placeholder="Enter encryption key (integer)"
           value={key}
           onChange={(e) => setKey(Number(e.target.value))}
+          className="input-field"
         />
-        <button onClick={handleEncrypt} style={{ padding: '10px 20px' }}>Encrypt</button>
-        <button onClick={handleDecrypt} style={{ padding: '10px 20px' }}>Decrypt</button>
+        <button onClick={handleEncrypt} className="action-button">Encrypt</button>
+        <button onClick={handleDecrypt} className="action-button">Decrypt</button>
         {encryptedText && <p>Encrypted Text: {encryptedText}</p>}
         {decryptedText && <p>Decrypted Text: {decryptedText}</p>}
       </header>
