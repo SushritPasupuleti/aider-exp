@@ -2,6 +2,8 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  return (
+    <div className="App" style={{ backgroundColor: 'white' }}>
   const [text, setText] = useState('');
   const [key, setKey] = useState(0);
   const [encryptedText, setEncryptedText] = useState('');
@@ -55,8 +57,8 @@ function App() {
           value={key}
           onChange={(e) => setKey(Number(e.target.value))}
         />
-        <button onClick={handleEncrypt}>Encrypt</button>
-        <button onClick={handleDecrypt}>Decrypt</button>
+        <button onClick={handleEncrypt} style={{ padding: '10px 20px' }}>Encrypt</button>
+        <button onClick={handleDecrypt} style={{ padding: '10px 20px' }}>Decrypt</button>
         {encryptedText && <p>Encrypted Text: {encryptedText}</p>}
         {decryptedText && <p>Decrypted Text: {decryptedText}</p>}
       </header>
